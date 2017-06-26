@@ -96,3 +96,8 @@
 #insta-wrapper span.comments svg {
     margin-right: 0.2em;
 }
+
+#insta-feed {
+  opacity: 0;
+  transition: 1s ease-in;
+}
