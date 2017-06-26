@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Pharmaca Instagram Feed</title>
+  <meta name="description" content="Pharmaca Instagram Feed">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="./insta-styles.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+ <div id="insta-wrapper">
+    <button id="l-button" type="button" class="view-more"></button>
+    <ul id="insta-feed">
+
+    </ul>
+    <button id="r-button" type="button" class="view-more"></button>
+
+ </div>
+
+ <script
+   src="https://code.jquery.com/jquery-3.2.1.js"
+   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+   crossorigin="anonymous"></script>
+ <script type="text/javascript" src="./insta.js"></script>
+ <script src="https://use.fontawesome.com/53aaf8d242.js"></script>
+ <script>
+    $(document).on('click', '.view-more', function(){
+        $("#insta-wrapper li, #insta-wrapper .hidden").toggle();
+    });
+
+ </script>
+</body>
+</html>
