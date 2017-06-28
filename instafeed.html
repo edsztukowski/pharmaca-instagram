@@ -9,6 +9,8 @@
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="./insta-styles.css">
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -17,13 +19,13 @@
 
 <body>
  <div id="insta-wrapper">
-    <button id="l-button" type="button" class="view-more"></button>
+
     <ul id="insta-feed">
 
     </ul>
-    <button id="r-button" type="button" class="view-more"></button>
 
  </div>
+
 
  <script
    src="https://code.jquery.com/jquery-3.2.1.js"
@@ -31,11 +33,8 @@
    crossorigin="anonymous"></script>
  <script type="text/javascript" src="./insta.js"></script>
  <script src="https://use.fontawesome.com/53aaf8d242.js"></script>
- <script>
-    $(document).on('click', '.view-more', function(){
-        $("#insta-wrapper li, #insta-wrapper .hidden").toggle();
-    });
+ <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
- </script>
+
 </body>
 </html>
